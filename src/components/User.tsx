@@ -1,14 +1,9 @@
-type userProps = {
-    userInfo: {
-        name: string;
-        age: number;
-    };
-};
+import { UserProps } from './user.types';
 
-const User = (props: userProps) => {
+const User = ({ UserInfo }: UserProps) => {
     return (
         <div>
-            {props.userInfo.name} - {props.userInfo.age}
+            {UserInfo.firstName} - {UserInfo.lastName}
         </div>
     );
 };
