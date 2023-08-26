@@ -2,8 +2,10 @@
 // import User from './components/User';
 // import Users from './components/Users';
 // import Status from './components/Status';
-import Title from './components/Title';
-import Wrapper from './components/Wrapper';
+// import Title from './components/Title';
+// import Wrapper from './components/Wrapper';
+
+import Button from './components/Button';
 
 function App() {
     // const UserInfo = {
@@ -28,10 +30,10 @@ function App() {
             <hr />
             <Users UsersInfo={UsersInfo} /> */}
             {/* <Status status="failed" /> */}
-
-            <Wrapper>
+            {/* <Wrapper>
                 <Title>Hello World</Title>
-            </Wrapper>
+            </Wrapper> */}
+            <Button clickHandler={(e, id) => console.log(e, id)} />
         </div>
     );
 }
