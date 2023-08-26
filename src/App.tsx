@@ -1,4 +1,5 @@
 import Greeting from './components/Greeting';
+import Status from './components/Status';
 import User from './components/User';
 import Users from './components/Users';
 
@@ -19,11 +20,12 @@ function App() {
     ];
     return (
         <div className="App">
-            <Greeting name="John" messageCount={5} isLoggedIn={true} />
+            {/* <Greeting name="John" messageCount={5} isLoggedIn={true} />
             <hr />
             <User UserInfo={UserInfo} />
             <hr />
-            <Users UsersInfo={UsersInfo} />
+            <Users UsersInfo={UsersInfo} /> */}
+            <Status status="failed" />
         </div>
     );
 }
