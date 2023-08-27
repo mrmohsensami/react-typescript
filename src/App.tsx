@@ -6,11 +6,13 @@
 // import Wrapper from './components/Wrapper';
 // import Button from './components/Button';
 
-import { useState } from 'react';
-import Input from './components/Input';
+import Container from './components/Container';
+
+// import { useState } from 'react';
+// import Input from './components/Input';
 
 function App() {
-    const [inputValue, setInputValue] = useState<string>('');
+    // const [inputValue, setInputValue] = useState<string>('');
     // const UserInfo = {
     //     firstName: 'John',
     //     lastName: 'Doe',
@@ -27,6 +29,7 @@ function App() {
     // ];
     return (
         <div className="App">
+            <Container styles={{ border: '1px solid red', padding: '1rem' }}></Container>
             {/* <Greeting name="John" messageCount={5} isLoggedIn={true} />
             <hr />
             <User UserInfo={UserInfo} />
@@ -37,13 +40,13 @@ function App() {
                 <Title>Hello World</Title>
             </Wrapper> */}
             {/* <Button clickHandler={(e, id) => console.log(e, id)} /> */}
-            <Input
+            {/* <Input
                 value={inputValue}
                 handleChange={(e) => {
                     console.log(e.target.value);
                     setInputValue(e.target.value);
                 }}
-            />
+            /> */}
         </div>
     );
 }
