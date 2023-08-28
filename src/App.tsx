@@ -6,7 +6,9 @@
 // import Wrapper from './components/Wrapper';
 // import Button from './components/Button';
 
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
+import User from './context/User';
+import UserContextProvider from './context/UserContext';
 
 // import Container from './components/Container';
 // import Login from './components/Login';
@@ -32,7 +34,10 @@ function App() {
     // ];
     return (
         <div className="App">
-            <Counter />
+            <UserContextProvider>
+                <User />
+            </UserContextProvider>
+            {/* <Counter /> */}
             {/* <Login /> */}
             {/* <Container styles={{ border: '1px solid red', padding: '1rem ' }}></Container> */}
             {/* <Greeting name="John" messageCount={5} isLoggedIn={true} />
