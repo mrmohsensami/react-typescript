@@ -6,8 +6,10 @@
 // import Wrapper from './components/Wrapper';
 // import Button from './components/Button';
 
+import Counter from './components/Counter';
+
 // import Container from './components/Container';
-import Login from './components/Login';
+// import Login from './components/Login';
 
 // import { useState } from 'react';
 // import Input from './components/Input';
@@ -30,7 +32,8 @@ function App() {
     // ];
     return (
         <div className="App">
-            <Login />
+            <Counter />
+            {/* <Login /> */}
             {/* <Container styles={{ border: '1px solid red', padding: '1rem ' }}></Container> */}
             {/* <Greeting name="John" messageCount={5} isLoggedIn={true} />
             <hr />
