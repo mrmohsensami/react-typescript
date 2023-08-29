@@ -6,7 +6,9 @@
 // import Wrapper from './components/Wrapper';
 // import Button from './components/Button';
 
-import Timer from './components/Timer';
+import Private from './components/Private';
+import Profile from './components/Profile';
+// import Timer from './components/Timer';
 
 // import Counter from './components/Counter';
 // import User from './context/User';
@@ -36,7 +38,8 @@ function App() {
     // ];
     return (
         <div className="App">
-            <Timer />
+            <Private isLoggedIn={true} Component={Profile} />
+            {/* <Timer /> */}
             {/* <UserContextProvider>
                 <User />
             </UserContextProvider> */}
