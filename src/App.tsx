@@ -6,7 +6,9 @@
 // import Wrapper from './components/Wrapper';
 // import Button from './components/Button';
 
-import List from './components/List';
+import Toast from './components/Toast';
+
+// import List from './components/List';
 
 // import Private from './components/Private';
 // import Profile from './components/Profile';
@@ -23,9 +25,9 @@ import List from './components/List';
 // import Input from './components/Input';
 
 function App() {
-    function handler(item: string | number) {
-        console.log(item);
-    }
+    // function handler(item: string | number) {
+    //     console.log(item);
+    // }
     // const [inputValue, setInputValue] = useState<string>('');
     // const UserInfo = {
     //     firstName: 'John',
@@ -43,10 +45,11 @@ function App() {
     // ];
     return (
         <div className="App">
-            <>
+            <Toast position="center-bottom" />
+            {/* <>
                 <List items={['John', 'Kevin', 'Merry']} handler={handler} />
                 <List items={[1, 2, 4]} handler={handler} />
-            </>
+            </> */}
             {/* <Private isLoggedIn={true} Component={Profile} /> */}
             {/* <Timer /> */}
             {/* <UserContextProvider>
