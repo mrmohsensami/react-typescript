@@ -6,8 +6,10 @@
 // import Wrapper from './components/Wrapper';
 // import Button from './components/Button';
 
-import Private from './components/Private';
-import Profile from './components/Profile';
+import List from './components/List';
+
+// import Private from './components/Private';
+// import Profile from './components/Profile';
 // import Timer from './components/Timer';
 
 // import Counter from './components/Counter';
@@ -21,6 +23,9 @@ import Profile from './components/Profile';
 // import Input from './components/Input';
 
 function App() {
+    function handler(item: string | number) {
+        console.log(item);
+    }
     // const [inputValue, setInputValue] = useState<string>('');
     // const UserInfo = {
     //     firstName: 'John',
@@ -38,7 +43,11 @@ function App() {
     // ];
     return (
         <div className="App">
-            <Private isLoggedIn={true} Component={Profile} />
+            <>
+                <List items={['John', 'Kevin', 'Merry']} handler={handler} />
+                <List items={[1, 2, 4]} handler={handler} />
+            </>
+            {/* <Private isLoggedIn={true} Component={Profile} /> */}
             {/* <Timer /> */}
             {/* <UserContextProvider>
                 <User />
